@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+}
+a, a:visited {
+	color: #00a5ca;
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+hr {
+	border: none;
+	border-top: 1px solid #444;
+	margin: 1em 0;
+}
+textarea {
+	width: 98%;
+}
+table {
+	width: 100%;
+}
+input, select, textarea {
+	font-size: 1em;
+}
+
+.wrapper {
+	padding: 1em;
+}
+.header, .footer {
+	text-align: center;
+	color: #444;
+}
+.header hr, .footer hr {
+	border-top: 2px solid #888;
+}
+.header h1 {
+	font-size: 1.5em;
+	margin: 0.25em;
+}
+.footer {
+	font-size: 0.9em;
+}
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content_wide {
+	max-width: 1000px;
+}
+.main_list {
+    font-size: 1.2em;
+    text-align: left;
+}
+.main_list_time {
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: "monospace";
+}
+.user_list {
+    font-size: 1em;
+    text-align: left;
+}
+.item_content {
+	text-align: left;
+	margin-bottom: 2em;
+}
+.item_form {
+	text-align: left;
+	width: 400px;
+	margin: 0 auto;
+}
+.item_form label {
+	display: inline-block;
+	min-width: 6em;
+}
