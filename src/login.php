@@ -8,7 +8,7 @@ if(isset($_POST['userId']) && isset($_POST['password'])) {
 		$hint = '用户不存在！';
 	} else {
 		$authStr = $r[0]['password'];
-		if($crypt->check($_POST['password'], $authStr)) {
+		if(!$authStr || $crypt->check($_POST['password'], $authStr)) {
 			$_SESSION['userId'] = $_POST['userId'];
 			header('Location: index.php');
 			exit(0);

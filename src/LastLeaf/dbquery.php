@@ -23,6 +23,7 @@ class DbQuery {
 			$this->conn = FALSE;
 			return;
 		}
+		$this->conn->select_db($dbname);
 		$this->conn->set_charset('utf8');
 		$this->errno = 0;
 		$this->error = FALSE;

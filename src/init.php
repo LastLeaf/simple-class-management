@@ -7,7 +7,7 @@ require_once('LastLeaf/randcrypt.php');
 date_default_timezone_set('Asia/Shanghai');
 session_start();
 
-$db = new DbQuery(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT, TRUE);
+$db = new DbQuery($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT, TRUE);
 $crypt = new RandCrypt();
 
 $userId = '';

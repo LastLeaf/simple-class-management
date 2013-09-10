@@ -46,7 +46,6 @@ else
 	$userForm = array();
 
 require_once('Michelf/Markdown.php');
-use \Michelf\Markdown;
 $content = Markdown::defaultTransform(htmlspecialchars($item['content']));
 
 $is = explode("\n", $item['form']);
